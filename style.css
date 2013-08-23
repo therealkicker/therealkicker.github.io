@@ -16,10 +16,11 @@ span.heading{
 .text_1{
 	font-size: 15px;
 	width: 687px;
-	margin: 0 auto;
+	margin-left: 135px;
 }
 .inner{
 width:308px;
+margin-left: 135px;
 }
 .text_2{
 	font-size: 15px;
