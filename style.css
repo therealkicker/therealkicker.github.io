@@ -1,9 +1,9 @@
 body {
+	width: 100%;
 	margin: 0;
-	background-size: 100% 100%;
+	padding: 0;
 	font-family: 'Coming Soon';
 	text-transform: uppercase;
-
 	background: rgb(239,239,239); /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  rgba(239,239,239,1) 0%, rgba(238,238,238,1) 36%, rgba(153,153,153,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(239,239,239,1)), color-stop(36%,rgba(238,238,238,1)), color-stop(100%,rgba(153,153,153,1))); /* Chrome,Safari4+ */
@@ -11,45 +11,16 @@ body {
 	background: -o-radial-gradient(center, ellipse cover,  rgba(239,239,239,1) 0%,rgba(238,238,238,1) 36%,rgba(153,153,153,1) 100%); /* Opera 12+ */
 	background: -ms-radial-gradient(center, ellipse cover,  rgba(239,239,239,1) 0%,rgba(238,238,238,1) 36%,rgba(153,153,153,1) 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  rgba(239,239,239,1) 0%,rgba(238,238,238,1) 36%,rgba(153,153,153,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#999999',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 }
 
 .right {
-	padding-right:50px;
-    float:right;
+	padding-right: 50px;
+  float:right;
 }
 
 .left {
-	padding-left:50px;
-    float:left;
-}
-
-
-.functionblock .explanation {
-	position:relative;
-	opacity:0;
-	left:-1000px;
-	-webkit-transform:scale(2,5);
-	-moz-transform:scale(2,5);
-	-ie-transform:scale(2,5);
-	-o-transform:scale(2,5);
-	o-transform:scale(2,5);
-	-webkit-transition: opacity 0.5s linear, left 0.5s ease-out, -webkit-transform 0.5s ease-out;
-	-moz-transition: opacity 0.5s linear, left 0.5s ease-out, -moz-transform 0.5s ease-out;
-	-ie-transition: opacity 0.5s linear, left 0.5s ease-out, -ie-transform 0.5s ease-out;
-	-o-transition: opacity 0.5s linear, left 0.5s ease-out, -o-transform 0.5s ease-out;
-	transition: opacity 0.5s linear, left 0.5s ease-out, transform: 0.5s ease-out;
-}
-
-.functionblock:hover .explanation {
-	-webkit-transform:scale(1,1);
-	-moz-transform:scale(1,1);
-	-ie-transform:scale(1,1);
-	-o-transform:scale(1,1);
-	o-transform:scale(1,1);
-	opacity:1;
-	left:0px;
+	padding-left: 50px;
+  float:left;
 }
 
 .explanation {
@@ -70,60 +41,105 @@ body {
 }
 
 #content {
-	width: 960px;
+	width: 620px;
 	margin: 0 auto;
 }
 
 #content img {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
-#content>h1 {
+#content > h1,
+#content > h2 {
 	text-align: center;
-	background: url(header_1.png) no-repeat;
-	width: 340px;
-	height: 90px;
+	background: white;
+	padding: 9px 5px 5px;
+	-webkit-box-shadow: 1px 1px 5px 2px #999;
+	box-shadow: 1px 1px 20px 2px #999;
 	margin: 0 auto;
-	margin-top:50px;
-	line-height: 90px;
+	margin-top: 20px;
 }
 
-#content>h2 {
-	text-align: center;
-	background: url(header_2.png) no-repeat;
-	width: 709px;
-	height: 90px;
-	margin: 0 auto;
-	font-size: 1.5em;
-	line-height: 75px;
+#content > h1 {
+	width: 390px;
+	font-size: 2.5em
 }
 
+#content > h2 {
+	width: 590px;
+}
 
 #asseenon {
-	position:absolute;
-	right:-30px;
-	top:-30px;
-	border-radius:30px;
-	padding:40px;
-	padding-top:60px;
-	padding-right:70px;
-	background-color:#800;
-	font-size: 1.3em;
-	box-shadow: 0px 0px 10px #f00;
-	color:white;
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	color: white;
+	padding: 0 15px;
+	text-align: center;
+	border-top: 20px solid #800;
+	border-bottom: 20px solid #800;
 }
 
+#asseenon span {
+	display: block;
+	padding: 20px 0;
+	font-size: 1.4em;
+	border-bottom: 3px double #ccc;
+}
 #asseenon img {
-	display:block;
-	padding-top:10px;
+	margin-right: 20px;
+}
+
+.feature {
+	width: 620px;
+	margin: 0 auto 100px auto;
+}
+
+.feature .explanation {
+	width: 400px;
+}
+
+.feature.lamp {
+	background: url(lamp.png) no-repeat top center;
+	padding-top: 190px;
+}
+
+.feature.kicker {
+	background: url(kicker.png) no-repeat top center;
+	background-size: contain;
+	padding-top: 320px;
+}
+
+.feature.app {
+	background: url(app.png) no-repeat top center;
+	padding-top: 220px;
+}
+
+.feature.lamp .explanation,
+.feature.app .explanation {
+	margin-top: 10px;
+	-moz-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+.feature.kicker .explanation {
+	-moz-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
 }
 
 .wantsomegetsome {
 	background-image: url(player_bar.png);
 	background-repeat: repeat-x;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin: 20px auto;
+	height: 100px;
+	width: 100%;
 }
 
 #contact {
@@ -145,18 +161,79 @@ body {
 	background:-ms-radial-gradient(center, #fff, #ccc); /* IE */
 	background:radial-gradient(center, #fff, #ccc); /* W3C Standard */
 
-	-webkit-transition: top 0.5s ease-out;
-	-moz-transition: top 0.5s ease-out;
-	-ie-transition: top 0.5s ease-out;
-	-o-transition: top 0.5s ease-out;
-	transition: top 0.5s ease-out;
-
 }
 
 #contact img {
 	vertical-align: middle;
 }
 
-.wantsomegetsome:hover #contact {
-	top:200px;
+/* ribbon style */
+
+ .ribbon-wrapper {
+	position: relative;
+}
+  .ribbon-front {
+	background-color: #000;	height: 200px;
+	width: 370px;
+	position: relative;
+	left:-35px;
+	z-index: 2;
+}
+
+  .ribbon-front,
+  .ribbon-back-left,
+  .ribbon-back-right
+{
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-topright,
+  .ribbon-edge-bottomleft,
+  .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style:solid;
+	height:0px;
+	width:0px;
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-topright {
+}
+
+  .ribbon-edge-bottomleft,
+  .ribbon-edge-bottomright {
+	top: 200px;
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-bottomleft {
+	left: -35px;
+	border-color: transparent #300 transparent transparent;
+}
+
+  .ribbon-edge-topleft {
+	top: -10px;
+	border-width: 10px 20px 0 0;
+}
+  .ribbon-edge-bottomleft {
+	border-width: 0 20px 0px 0;
+}
+
+  .ribbon-edge-topright,
+  .ribbon-edge-bottomright {
+	left: 315px;
+	border-color: transparent transparent transparent #300;
+}
+
+  .ribbon-edge-topright {
+	top: 0px;
+	border-width: 0px 0 0 20px;
+}
+  .ribbon-edge-bottomright {
+	border-width: 0 0 10px 20px;
 }
