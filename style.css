@@ -25,12 +25,6 @@ body {
     float:left;
 }
 
-.withbar {
-	background-image: url(player_bar.png);
-	background-repeat: repeat-x;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 
 .functionblock .explanation {
 	position:relative;
@@ -125,3 +119,44 @@ body {
 	padding-top:10px;
 }
 
+.wantsomegetsome {
+	background-image: url(player_bar.png);
+	background-repeat: repeat-x;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#contact {
+	position:fixed;
+	left:50%;
+	top:-500px;
+	width:450px;
+	margin-left:-225px;
+
+	padding:20px;
+	border-radius:30px;
+	box-shadow:0px 0px 10px black;
+	text-align:center;
+
+	background: #eee;
+	background:-moz-radial-gradient(center, #fff, #ccc); /* Firefox */
+	background:-webkit-radial-gradient(center, #fff, #ccc); /* Safari, Chrome */
+	background:-o-radial-gradient(center, #fff, #ccc); /* Opera */
+	background:-ms-radial-gradient(center, #fff, #ccc); /* IE */
+	background:radial-gradient(center, #fff, #ccc); /* W3C Standard */
+
+	-webkit-transition: top 0.5s ease-out;
+	-moz-transition: top 0.5s ease-out;
+	-ie-transition: top 0.5s ease-out;
+	-o-transition: top 0.5s ease-out;
+	transition: top 0.5s ease-out;
+
+}
+
+#contact img {
+	vertical-align: middle;
+}
+
+.wantsomegetsome:hover #contact {
+	top:200px;
+}
