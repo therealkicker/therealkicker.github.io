@@ -110,10 +110,38 @@ body {
 	width: 500px;
 }
 
+.feature.lamp img {
+	width: 250px;
+}
+
 .feature.lamp {
-	background: url(lamp.png) no-repeat top center;
-	padding-top: 140px;
-	background-size: 50%;
+	height: 260px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.feature.lamp .explanation{
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	bottom: 0;
+}
+.feature.lamp.fixed .fixable-lamp {
+	position: fixed;
+	top: 90px;
+	left: 50%;
+	width: 320px;
+	display: block;
+	margin-left: -160px;
+}
+
+.feature.lamp.absolute .fixable-lamp {
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	width: 320px;
+	display: block;
+	margin-left: -160px;
 }
 
 .feature.kicker {
