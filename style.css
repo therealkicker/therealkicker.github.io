@@ -71,24 +71,22 @@ body {
 }
 
 #asseenon {
-	width: 300px;
-	height: 200px;
+	width: 100%;
 	margin: 0 auto;
-	color: white;
-	padding: 0 15px;
+	color: #000;
 	text-align: center;
-	border-top: 20px solid #800;
-	border-bottom: 20px solid #800;
+	background: rgba(255,255,255,0.7);
+	line-height: 50px;
+	margin-bottom: 100px;
 }
 
-#asseenon span {
-	display: block;
-	padding: 20px 0;
-	font-size: 1.4em;
-	border-bottom: 3px double #ccc;
-}
+#asseenon span,
 #asseenon img {
-	margin-right: 20px;
+	padding-top: 7px;
+	font-size: 1.5em;
+	display: inline-block;
+	margin-right: 50px;
+	line-height: 50px;
 }
 
 .feature {
@@ -143,97 +141,9 @@ body {
 }
 
 #contact {
-	position:fixed;
-	left:50%;
-	top:-500px;
-	width:450px;
-	margin-left:-225px;
-
-	padding:20px;
-	border-radius:30px;
-	box-shadow:0px 0px 10px black;
-	text-align:center;
-
-	background: #eee;
-	background:-moz-radial-gradient(center, #fff, #ccc); /* Firefox */
-	background:-webkit-radial-gradient(center, #fff, #ccc); /* Safari, Chrome */
-	background:-o-radial-gradient(center, #fff, #ccc); /* Opera */
-	background:-ms-radial-gradient(center, #fff, #ccc); /* IE */
-	background:radial-gradient(center, #fff, #ccc); /* W3C Standard */
-
-}
-
-#contact img {
-	vertical-align: middle;
-}
-
-/* ribbon style */
-
- .ribbon-wrapper {
-	position: relative;
-}
-  .ribbon-front {
-	background-color: #000;	height: 200px;
-	width: 370px;
-	position: relative;
-	left:-35px;
-	z-index: 2;
-}
-
-  .ribbon-front,
-  .ribbon-back-left,
-  .ribbon-back-right
-{
-	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-}
-
-  .ribbon-edge-topleft,
-  .ribbon-edge-topright,
-  .ribbon-edge-bottomleft,
-  .ribbon-edge-bottomright {
-	position: absolute;
-	z-index: 1;
-	border-style:solid;
-	height:0px;
-	width:0px;
-}
-
-  .ribbon-edge-topleft,
-  .ribbon-edge-topright {
-}
-
-  .ribbon-edge-bottomleft,
-  .ribbon-edge-bottomright {
-	top: 200px;
-}
-
-  .ribbon-edge-topleft,
-  .ribbon-edge-bottomleft {
-	left: -35px;
-	border-color: transparent #300 transparent transparent;
-}
-
-  .ribbon-edge-topleft {
-	top: -10px;
-	border-width: 10px 20px 0 0;
-}
-  .ribbon-edge-bottomleft {
-	border-width: 0 20px 0px 0;
-}
-
-  .ribbon-edge-topright,
-  .ribbon-edge-bottomright {
-	left: 315px;
-	border-color: transparent transparent transparent #300;
-}
-
-  .ribbon-edge-topright {
-	top: 0px;
-	border-width: 0px 0 0 20px;
-}
-  .ribbon-edge-bottomright {
-	border-width: 0 0 10px 20px;
+	width: 400px;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 130px;
+	padding-bottom: 100px;
 }
