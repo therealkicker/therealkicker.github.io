@@ -13,23 +13,13 @@ body {
 	background: radial-gradient(ellipse at center,  rgba(239,239,239,1) 0%,rgba(238,238,238,1) 36%,rgba(153,153,153,1) 100%); /* W3C */
 }
 
-.right {
-	padding-right: 50px;
-  float:right;
-}
-
-.left {
-	padding-left: 50px;
-  float:left;
-}
-
 .explanation {
 	width: 687px;
 	margin: auto;
 }
 
 .explanation h3 {
-	font-size: 2em;
+	font-size: 30px;
 	font-weight: normal;
 	margin:0px;
 }
