@@ -9,10 +9,12 @@ $(function() {
           $('.feature.lamp').addClass("fixed");
           $('.feature.lamp').removeClass("absolute");
           $('.feature.lamp .explanation').fadeOut();
+          $('h1').removeClass("absolute");
         }
       if( $(window).scrollTop() > 222 ) {
           $('.feature.lamp').removeClass("fixed");
           $('.feature.lamp').addClass("absolute");
+          $('h1').addClass("absolute");
       }
   });
 });
