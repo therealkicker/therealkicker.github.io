@@ -59,6 +59,7 @@ body {
 	box-shadow: 1px 1px 20px 2px #999;
 	margin: 0 auto;
 	margin-top: 20px;
+	font-weight: normal;
 }
 
 #content > h1 {
